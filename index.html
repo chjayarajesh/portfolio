@@ -5,95 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <header>
-        <h1>Welcome to my portfolio</h1>
-        <nav>
-            <button><a>About</a></button>
-            <button><a>Skills</a></button>
-            <button><a>Projects</a></button>
-            <button><a>Contact</a></button>
-        </nav>
+    <header id="top">
+        <div>
+            <h1>Welcome to my portfolio</h1>
+            <nav>
+                <button><a href="#about">About</a></button>
+                <button><a href="#skills">Skills</a></button>
+                <button><a href="#projects">Projects</a></button>
+                <button><a href="#contact">Contact</a></button>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="home">
-            <p>Hello Everyone I'm <b>Ch Jaya Rajesh</b></p>
-            <img src="profile.jpg" height="250">
-        </section>
 
 
         <section class="about" id="about">
-            <h2>About me</h2>
-            <ul>
-                <li>I'm an aspiring <b>Web Developer</b> and learner at <b>MentiBy</b></li>
-                <li>I'm currently Pursuing my <b>B.Tech</b> in <b>E.C.E</b> at <b>Narayana Engineering College</b></li>
-                <li>Currently upskilling myself with MentiBy Cohert2.0</li>
-                <li>You can check out my learning <a href="#foot">here</a></li>
-            </ul>
+            <div>
+                <div><h1>Ch Jaya Rajesh</h1></div>
+                <div class="image"><img src="profile.jpg" height="200"></div>
+                <ul>
+                    <li>I'm an aspiring <b>Web Developer</b> and learner at <b>MentiBy</b></li>
+                    <li>I'm currently Pursuing my <b>B.Tech</b> in <b>E.C.E</b> at <b>Narayana Engineering College</b></li>
+                    <li>Currently upskilling myself with MentiBy Cohert2.0</li>
+                    <li>You can check out my learning <a href="#foot">here</a></li>
+                </ul>
+            </div>
         </section>
 
 
         <section class="skills" id="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>HTML</li>
-            </ul>
+            <div>
+                <h2>My Skills</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            
         </section>
 
 
         <section class="projects" id="projects">
-            <h2>Projects</h2>
-            <table border="1" width="500">
-                <tr>
-                    <th>Project Name</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>Portfolio</td>
-                    <td>Built an simple Portfolio using HTML</td>
-                </tr>
-                <tr>
-                    <td>Python calculator</td>
-                    <td>Python program to do calculator operations</td>
-                </tr>
-            </table>
+            <div>
+                <h2>Projects</h2>
+                <table border="1">
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Portfolio</td>
+                        <td>Built an simple Portfolio using HTML</td>
+                    </tr>
+                    <tr>
+                        <td>Python calculator</td>
+                        <td>Python program to do calculator operations</td>
+                    </tr>
+                </table>
+            </div>
+            
         </section>
 
 
         <section class="contact" id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out!</p>
-            <form>
-                <div>
-                    <label for="name"><b>Name :</b></label>
-                    <input type="text" id="name" required>
-                </div>
-                <div>
-                    <label for="mail"><b>Mail-Id:</b></label>
-                    <input type="email" required id="mail">
-                </div>
-                <div>
-                    <label for="msg"><b>Leave your message :</b></label>
-                    <br>
-                    <textarea name="msg" id="msg" cols="40" rows="5" ></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
+            <div>
+                <h2>Contact</h2>
+                <p>Feel free to reach out!</p>
+                <form>
+                    <div class="username">
+                        <label for="name"><b>Name :</b></label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="mailid">
+                        <label for="mail"><b>Mail-Id:</b></label>
+                        <input type="email" required id="mail">
+                    </div>
+                    <div class="gen">
+                        <label for="gender"><b>Select your Gender:</b></label>
+                        <div>
+                            <label for="male"><input type="radio" required id="male" name="gender" checked> Male</label>
+                            <label for="female"><input type="radio" required id="female" name="gender" > Female</label>
+                        </div>
+                        
+                    </div>
+                    <div class="message">
+                        <label for="msg"><b>Leave your message :</b></label>
+                        <br>
+                        <textarea name="msg" id="msg" cols="40" rows="5" ></textarea>
+                    </div>
+                    <button type="submit" class="sub-btn">Submit</button>
+                </form>
+            </div>
+            
         </section>
     </main>
 
     <footer id="foot">
-        <b>&copy Ch Jaya Rajesh 2025. All rights reserved</b> 
+        <p><b>&copy 2025 My Portfolio</b></p> 
         <div class="social">
-            <a href="https://github.com/StartWithRajesh" style="font-size:30px"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ch-jaya-rajesh-755107279" style="font-size:30px"><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://github.com/StartWithRajesh" style="font-size:40px"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ch-jaya-rajesh-755107279" style="font-size:40px"><i class="fa fa-linkedin-square"></i></a>
         </div>
-        
     </footer>
+
+    <a class="up-btn" href="#top"><button class="up"> &#8679; </button></a>
+
 </body>
 </html>
