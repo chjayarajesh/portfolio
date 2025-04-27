@@ -13,14 +13,17 @@ header{
     align-items: center;
     background-size: cover;
 }
-header > div >  nav > button{
+header > div >  nav > a > button{
     border: solid white;
     height: 50px;
     width: 125px;
+    font-size: 15px;
     border-radius: 15px;
-    margin: 20px;
     transition: all ease .2s;
     cursor: pointer;
+    font-weight: lighter;
+    color: rgb(14, 1, 255);
+    padding: 0px;
 }
 header nav{
     border-radius: 15px;
@@ -35,16 +38,15 @@ header h1{
     margin-bottom: 25px;
     text-align: center;
 }
-header a{
-    font-size: 15px;
-    font-weight: 800;
-    color: rgb(14, 1, 255);
+header a{ 
     text-decoration: none;
+    margin: 20px;
 }
 header button:hover{
-    background-color: rgb(31, 185, 227);
-    border: rgb(31, 194, 227);
+    background-color: rgb(54, 195, 234);
+    border: solid rgb(54, 195, 234);
     transform: scale(1.1);
+    color: white;
 }
 
 section{
