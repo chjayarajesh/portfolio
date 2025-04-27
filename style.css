@@ -134,7 +134,7 @@ section{
 
 /*contact*/
 .contact{
-    height: 75vh;
+    height: 80vh;
 }
 .contact > div{
     border: solid;
@@ -181,6 +181,13 @@ section{
     background-color: rgb(59, 182, 234);
     border: rgb(50, 185, 244);
     border-radius: 15px;
+    cursor: pointer;
+    transition: ease all .3s;
+}
+.contact button:hover{
+    transform: scale(1.1);
+    color: rgb(0, 229, 255);
+    background-color: blue;
 }
 form .message{
     flex-direction: column;
@@ -189,12 +196,12 @@ form textarea{
     resize: none;
 }
 #mail, #name{
-    width: 250px;
+    width: ;
 }
 
 /*footer*/
 footer{
-    height: 25vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
