@@ -135,6 +135,7 @@ section{
 /*contact*/
 .contact{
     height: 80vh;
+    padding-bottom: 0px;
 }
 .contact > div{
     border: solid;
@@ -146,6 +147,7 @@ section{
     align-items: center;
     border-radius: 15px;
     border-width: 1px;
+    padding: 20px;
 }
 .contact  h2{
     color: blue;
@@ -170,6 +172,7 @@ section{
     padding: 5px;
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 .contact button{
     height: 45px;
@@ -188,8 +191,10 @@ section{
     color: rgb(0, 229, 255);
     background-color: blue;
 }
-form .message{
-    flex-direction: column;
+.gen > div{
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
 }
 form textarea{
     resize: none;
