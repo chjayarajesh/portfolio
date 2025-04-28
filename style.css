@@ -2,6 +2,9 @@
     margin: 0px;
     font-family: monospace;
 }
+body{
+    background-color: #004b84;
+}
 /*home page*/
 
 header{
@@ -58,6 +61,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 /*about page*/
 
@@ -72,15 +76,16 @@ section{
     align-items: center;
     border-radius: 15px;
     border-width: 1px;
+    background-color: white;
 }
 .about h1{
     font-size: 40px;
     color: blue;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     text-align: center;
 }
 .about .image{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .about li{
     list-style-type: none;
@@ -103,6 +108,7 @@ section{
     align-items: center;
     border-radius: 15px;
     border-width: 1px;
+    background-color: white;
 }
 .skills  h2{
     color: blue;
@@ -127,6 +133,7 @@ section{
     border-radius: 15px;
     border-width: 1px;
     padding: 15px;
+    background-color: white;
 }
 .projects  h2{
     color: blue;
@@ -157,6 +164,7 @@ section{
     border-radius: 15px;
     border-width: 1px;
     padding: 20px;
+    background-color: white;
 }
 .contact  h2{
     color: blue;
