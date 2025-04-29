@@ -16,6 +16,7 @@ header{
     align-items: center;
     background-size: cover;
 }
+
 header > div >  nav > a > button{
     border: solid white;
     height: 50px;
@@ -35,6 +36,7 @@ header nav{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
 }
 header h1{
     font-size: 45px;
@@ -252,7 +254,7 @@ footer > div > a:hover{
     font-size: 20px;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 15px;
     border: solid rgb(0, 8, 255);
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -264,7 +266,7 @@ footer > div > a:hover{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: none;
+    
 }
 
 @media(max-width: 500px){
@@ -275,8 +277,10 @@ footer > div > a:hover{
     .about h1{
         font-size: 30px;
     }
-    .up-btn{
-        display: block;
+    .up{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
     }
     header button:hover{
         transform: scale(1);
@@ -292,5 +296,7 @@ footer > div > a:hover{
     .skills h2, .contact h2, .projects h2{
         font-size: 30px;
     }
-
+    footer > div > a:hover{
+        transform: scale(1);
+    }
 }
