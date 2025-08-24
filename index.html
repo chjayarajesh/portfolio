@@ -3,134 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    
-    <header id="top">
-        <div class="resimg">
-            <img src="icon.jpg" alt="profile">
-        </div>
-        <div class="bottom-set">
-            <div>
-                <h1>Welcome to My Portfolio</h1>
-                <nav>
-                    <a href="#about"><button>About</button></a>
-                    <a href="#skills"><button>Skills</button></a>
-                    <a href="#projects"><button>Projects</button></a>
-                    <a href="#contact"><button>Contact</button></a>
-                </nav>
-            </div>
-        </div>
+<body >
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">contact</a>
+            <a href="#admin" id="admin">Admin</a>
+            <button class="theme"><span class="material-symbols-outlined">dark_mode</span></button>
+        </nav>
+        <button class="menu-btn"><span class="material-symbols-outlined">
+menu
+</span></button>
+
     </header>
     <main>
-        <section class="about" id="about">
-            <div>
-                <div><h1>Ch Jaya Rajesh</h1></div>
-                <div class="image"><img src="profile.jpg" height="250"></div>
-                <ul>
-                    <li>I'm an aspiring <b>Web Developer</b> and learner at <b>MentiBy</b></li>
-                    <li>I'm currently Pursuing my <b>B.Tech</b> in <b>E.C.E</b> at <b>Narayana Engineering College</b></li>
-                    <li>Currently upskilling myself with MentiBy Cohert2.0</li>
-                    <li>You can check out my learning <a href="#foot">here</a></li>
-                </ul>
-            </div>
-        </section>
-
-
-        <section class="skills" id="skills">
-            <div>
-                <h2>My Skills</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript(Basics)</li>
-                </ul>
-            </div>
-            
-        </section>
-
-
-        <section class="projects" id="projects">
-            <div>
-                <h2>Projects</h2>
-                <table border="1">
-                    <tr>
-                        <th>Project Name</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Portfolio</td>
-                        <td>Built an simple Portfolio using HTML, CSS</td>
-                    </tr>
-                    <tr>
-                        <td>calculator</td>
-                        <td>Calculator WebApp built using HTML, CSS and JS</td>
-                    </tr>
-                    <tr>
-                        <td>ChatBot</td>
-                        <td>Made using Python and Fast API</td>
-                    </tr>
-                    <tr>
-                        <td>To Do List</td>
-                        <td>A simple task manager built using HTML, CSS and JS</td>
-                    </tr>
-                    <tr>
-                        <td>Simon Game</td>
-                        <td>A game built with Animations using HTML, CSS and JS</td>
-                    </tr>
-                </table>
-            </div>
-            
-        </section>
-
-
-        <section class="contact" id="contact">
-            <div>
-                <h2>Contact Me</h2>
-                <p>Feel free to reach out!</p>
-                <form>
-                    <div class="username">
-                        <label for="name"><b>Name :</b></label>
-                        <input type="text" id="name" required>
+        <div class="left">
+            <div class="card">
+                <div class="image">
+                    <img src="images/profile.jpg" alt="photo">
+                </div>
+                <div class="content">
+                    <h1>Ch Jaya Rajesh</h1>
+                    <h3>Full Stack Developer</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ch-jaya-rajesh-755107279/" target="_blank"><i class="fa fa-linkedin-square linkedin-icon" ></i></a>
+                        <a href="https://github.com/chjayarajesh" target="_blank"><i class="fa fa-github github-icon"></i></a>
                     </div>
-                    <div class="mailid">
-                        <label for="mail"><b>Mail-Id:</b></label>
-                        <input type="email" required id="mail">
-                    </div>
-                    <div class="gen">
-                        <label for="gender"><b>Choose your Gender: </b></label>
-                        <div>
-                            <label for="male"> <input type="radio" required id="male" name="gender" checked> Male</label>
-                            <label for="female"> <input type="radio" required id="female" name="gender" > Female</label>
-                        </div>
+                    <div class="btns">
+                        <button>Resume</button>
+                        <a href="#projects"><button>My Work</button></a>
                         
                     </div>
-                    <div class="message">
-                        <label for="msg"><b>Leave your message :</b></label>
-                        <br>
-                        <textarea name="msg" id="msg" cols="30" rows="7" ></textarea>
-                    </div>
-                    <button type="submit" class="sub-btn">Submit</button>
-                </form>
+                </div>
             </div>
-            
-        </section>
-    </main>
-
-    <footer id="foot">
-        <p><b>&copy 2025 My Portfolio</b></p> 
-        <div class="social">
-            <a href="https://github.com/StartWithRajesh" style="font-size:40px"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ch-jaya-rajesh-755107279" style="font-size:40px"><i class="fa fa-linkedin-square"></i></a>
         </div>
+
+        <div class="right">
+            <div id="about">
+            <section class="about">
+                <h2>About</h2>
+                <p>
+                    I’m Ch Jaya Rajesh, a final-year B.Tech student in Electronics and Communication Engineering with a strong foundation in Python and Web Development. I’m passionate about turning ideas into impactful solutions and enjoy working on projects that solve real-world problems. My interests mainly revolve around Web Development and IoT.
+                </p>
+                <br>
+                <br>
+                <p>
+                    I aspire to become a Full Stack Developer, building applications that are both functional and user-friendly. I value teamwork and collaboration, and I’m always eager to learn new skills, share knowledge, and contribute to projects that create meaningful change.
+                </p>
+            </section>
+            </div>
+
+            <section class="details">
+                <div class="education">
+                    <h2>Education</h2>
+                    <div class="blocks">
+                    <h2>B.Tech(ECE) - Narayana Engineering College Nellore</h2>
+                    <h3><span class="year">Year : </span>2022 - Present</h3>
+                    </div>
+                    <div class="blocks">
+                    <h2>Intermediate(M.P.C) - Sri Chaitanya Jr College Nellore</h2>
+                    <h3><span class="year">Year : </span>2020 - 2022</h3>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <div class="blocks">
+                    <h2>No Experience</h2>
+                    </div>
+                </div>
+            </section>
+
+            <div id="skills">
+            <section class="skills" >
+            <h2>Skills</h2>
+                <div class="skills-container">
+
+                    <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"> Python</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"> Java</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"> C (basic)</li>
+                    </ul>
+                    </div>
+
+                    <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"> HTML5 / CSS3</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"> JavaScript</li>
+                    </ul>
+                    </div>
+
+                    <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS"> NodeJS, Express</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/api/api-original.svg" alt="API"> REST API Development</li>
+                    </ul>
+                    </div>
+
+                    <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"> MySQL</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"> PostgreSQL</li>
+                    </ul>
+                    </div>
+
+                </div>
+            </section>
+            </div>
+
+            <div id="projects">
+            <section class="projects" >
+            <h2>My Work</h2>
+            <div class="projects-container">
+                <div class="card">
+                <div class="content">
+                    <h3>JavaScript Mini Projects</h3>
+                    <p>Built 8 JavaScript mini projects to master Frontend.</p>
+                    <p><strong>Tech Stack:</strong></p>
+                    <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    </ul>
+                    <div class="links">
+                    <a href="https://chjayarajesh.github.io/Javascript-Mastery/" target="_blank"><span>Live demo</span></a>
+                    <a href="https://github.com/chjayarajesh/Javascript-Mastery" target="_blank"><span>Source Code</span></a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="card">
+                <div class="content">
+                    <h3>Simon - Game</h3>
+                    <p>A animated fun memory game built with HTML, CSS, and JavaScript.</p>
+                    <p><strong>Tech Stack:</strong></p>
+                    <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    </ul>
+                    <div class="links">
+                    <a href="https://chjayarajesh.github.io/Simon-game/" target="_blank"><span>Live demo</span></a>
+                    <a href="https://github.com/chjayarajesh/Simon-game" target="_blank"><span>Source Code</span></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- View More Button -->
+            <div class="load-more">
+                <button>View More</button>
+            </div>
+            </section>
+            </div>
+
+            <div id="contact">
+            <section class="contact" >
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                <p><span> Email:</span> <a href="mailto:chjayarajesh@gmail.com">chjayarajesh@gmail.com</a></p>
+                <p><span> Phone:</span> <a href="tel:+916302304733">+91 6302304733</a></p>
+                <p><span> Location:</span> Nellore, India</p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea name="msg" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                </div>
+            </div>
+            </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+       &COPY; CH JAYA RAJESH 2025.
     </footer>
-
-    <a class="up-btn" href="#top"><button class="up">TOP</button></a>
-
+    <script src="script.js"></script>
 </body>
 </html>
