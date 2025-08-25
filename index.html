@@ -6,10 +6,13 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body >
+<body class="dark-theme">
     <canvas id="three-bg"></canvas>
     <header>
         <nav>
@@ -18,7 +21,7 @@
             <a href="#projects">Projects</a>
             <a href="#contact">contact</a>
             <a href="#admin" id="admin">Admin</a>
-            <button class="theme"><span class="material-symbols-outlined">dark_mode</span></button>
+            <button class="theme"><span class="material-symbols-outlined">light_mode</span></button>
         </nav>
         <button class="menu-btn"><span class="material-symbols-outlined">
 menu
@@ -26,7 +29,7 @@ menu
 
     </header>
     <main>
-        <div class="left">
+        <div class="left fade-section">
             <div class="card">
                 <div class="image">
                     <img src="images/profile.jpg" alt="photo">
@@ -48,7 +51,7 @@ menu
         </div>
 
         <div class="right">
-            <div id="about">
+            <div id="about" class="fade-section">
             <section class="about">
                 <h2>About</h2>
                 <p>
@@ -62,7 +65,7 @@ menu
             </section>
             </div>
 
-            <section class="details">
+            <section class="details  fade-section">
                 <div class="education">
                     <h2>Education</h2>
                     <div class="blocks">
@@ -75,7 +78,7 @@ menu
                     </div>
                 </div>
 
-                <div class="experience">
+                <div class="experience fade-section">
                     <h2>Experience</h2>
                     <div class="blocks">
                     <h2>No Experience</h2>
@@ -84,7 +87,7 @@ menu
             </section>
 
             <div id="skills">
-            <section class="skills" >
+            <section class="skills fade-section">
             <h2>Skills</h2>
                 <div class="skills-container">
 
@@ -126,10 +129,10 @@ menu
             </div>
 
             <div id="projects">
-            <section class="projects" >
+            <section class="projects fade-section">
             <h2>My Work</h2>
             <div class="projects-container">
-                <div class="card">
+                <div class="card  fade-section">
                 <div class="content">
                     <h3>JavaScript Mini Projects</h3>
                     <p>Built 8 JavaScript mini projects to master Frontend.</p>
@@ -146,7 +149,7 @@ menu
                 </div>
                 </div>
 
-                <div class="card">
+                <div class="card  fade-section">
                 <div class="content">
                     <h3>Simon - Game</h3>
                     <p>A animated fun memory game built with HTML, CSS, and JavaScript.</p>
@@ -172,19 +175,19 @@ menu
             </div>
 
             <div id="contact">
-            <section class="contact" >
+            <section class="contact  fade-section" >
             <h2>Contact Me</h2>
             <div class="contact-container">
 
                 <!-- Contact Info -->
-                <div class="contact-info">
+                <div class="contact-info  fade-section">
                 <p><span> Email:</span> <a href="mailto:chjayarajesh@gmail.com">chjayarajesh@gmail.com</a></p>
                 <p><span> Phone:</span> <a href="tel:+916302304733">+91 6302304733</a></p>
                 <p><span> Location:</span> Nellore, India</p>
                 </div>
 
                 <!-- Contact Form -->
-                <div class="contact-form">
+                <div class="contact-form  fade-section">
                 <form action="">
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>

@@ -89,6 +89,28 @@ document.addEventListener("DOMContentLoaded", function () {
     })();
 
 
+    const fade_sections = document.querySelectorAll(".fade-section");
+
+    const observer = new IntersectionObserver(
+        (entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            obs.unobserve(entry.target); // run only once
+            }
+        });
+        },
+        {
+        threshold: 0.2, // triggers when 20% of element is visible
+        }
+    );
+
+    fade_sections.forEach(section => {
+        observer.observe(section);
+    });
+
+
+
     const adminLink = document.getElementById("admin");
     const adminCard = document.querySelector(".admin-card");
     const closeBtn = document.getElementById("close");
