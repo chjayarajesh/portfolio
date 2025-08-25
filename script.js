@@ -141,12 +141,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-
+    document.querySelector('nav a[href="#about"]').classList.add('active-section');
     // Highlight active nav link based on scroll
     const sections = ['about', 'skills', 'projects', 'contact'];
     window.addEventListener('scroll', function () {
         let scrollPos = window.scrollY || window.pageYOffset;
         let offset = 120; // Adjust for header height
+        let pageBottom = window.innerHeight + scrollPos >= document.body.offsetHeight - 2;
+
+        let activeSet = false;
 
         sections.forEach(id => {
             const section = document.getElementById(id);
@@ -157,8 +160,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (scrollPos >= top && scrollPos < bottom) {
                     navLinks.forEach(link => link.classList.remove('active-section'));
                     if (navLink) navLink.classList.add('active-section');
+                    activeSet = true;
                 }
             }
         });
+
+        // If reached page bottom → highlight "contact"
+        if (pageBottom) {
+            navLinks.forEach(link => link.classList.remove('active-section'));
+            const contactLink = nav.querySelector('a[href="#contact"]');
+            if (contactLink) contactLink.classList.add('active-section');
+        }
     });
 });
