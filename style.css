@@ -2,9 +2,9 @@
 body.dark-theme {
     --primary-bg: #0a0a0a;
     --secondary-bg: #111111;
-    --card-bg: #1a1a1a;
+    --card-bg: rgba(82, 77, 77, 0.4);
     --primary-text: #6cff87;
-    --secondary-text: #9ca3af;
+    --secondary-text: #d1d5dd;
     --accent: #39ff14;
     --accent-dark: #00cc44;
     --border: #32d315;
@@ -21,7 +21,7 @@ body.dark-theme {
 :root {
     --primary-bg: #f5f9ff;
     --secondary-bg: #ffffff;
-    --card-bg: #cadbf3;
+    --card-bg: rgba(94, 145, 212, 0.2);
     --primary-text: #0a1a2f;
     --secondary-text: #333333;
     --accent: #1e40af;
@@ -825,3 +825,70 @@ footer{
     }
 }
 
+
+/* Background animation canvas */
+/* Background animation canvas */
+#three-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;           /* push behind everything */
+    pointer-events: none;  /* clicks pass through */
+}
+
+
+/* Make sure all other content stays above */
+
+.admin-card {
+  display: flex;
+  padding: 40px;
+  background-color: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  position: fixed;
+  height: 50%;
+  width: 100%;
+  top: 150px;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.admin-card form input{
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  background: var(--secondary-bg);
+  color: var(--primary-text);
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.admin-card input:focus{
+  border-color: var(--accent-dark);
+  box-shadow: 0 0 8px var(--accent);
+  outline: none;
+}
+.admin-card button {
+  background: var(--button-bg);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+.admin-card button[id="close"] {
+  background: red;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  
+}
