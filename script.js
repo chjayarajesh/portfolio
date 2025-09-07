@@ -144,9 +144,9 @@ document.addEventListener("DOMContentLoaded", function () {
     themeBtn.addEventListener('click', function () {
         body.classList.toggle('dark-theme');
         if (body.classList.contains('dark-theme')) {
-            themeIcon.textContent = "light_mode";
-        } else {
             themeIcon.textContent = "dark_mode";
+        } else {
+            themeIcon.textContent = "light_mode";
         }
     });
 
